@@ -1,0 +1,47 @@
+sensors:{
+    ph:{
+        Se podria tomar cada 5 min o no se cual seria lo optimo todavia, pero mandar a la API cada que el valor cambie
+        radicalmente (posibilidad). Osea, dentro del microcontrolador regular en tiempo real y actuar en base a las lecturas reales
+        pero solo mandar datos cuando sea un cambio como de ej "7.5 a 7" o asi. Queda a disposicion de que tan sensibles
+        son los sensores.
+        sensor de pH (numero decimal)
+    },
+    ec:{
+        Se podria tomar cada 5 min o no se cual seria lo optimo todavia, pero mandar a la API cada que el valor cambie
+        radicalmente (posibilidad).Osea, dentro del microcontrolador regular en tiempo real y actuar en base a las lecturas reales
+        pero solo mandar datos cuando sea un cambio como de ej "7.5 a 7" o asi. Queda a disposicion de que tan sensibles
+        son los sensores.
+        sensor de nutrientes, se le dice EC o TDS "total disolved solids" o electric current creo, 
+        basicamente le da descargas al agua y checa la conductividad, entre mas solidos tiene (nutrientes) disueltos,
+        mayor conductividad debe de tener. (numero decimal)
+    },
+    prox:[
+        De antemano se tiene la capacidad maxima de cada reserva, en base a cuanto a bajado las soluciones, se
+        saca una conversion de cuanto queda maomeno del liquido.
+        Estos se pueden sacar cada 3, 4, 6, 8 hrs imagino, dependiendo cuantas plantas tiene cultivando (entre menos
+        plantas menos consumo y viceversa)
+        water:{
+            nivel de la tina de agua (porcentaje)
+        },
+        acid:{
+            nivel de reserva de solucion acida (porcentaje)
+        },
+        base:{
+            nivel de reserva de solucion base (porcentaje)
+        },
+        nutrient:{
+            nivel de reserva de nutriente, desconozco si usaremos varios como, nutrientes
+            como los otros que eran A y B, pero para mas facilidad, priorizar uno que sea con todo
+            seria mejor, (para ahorrar bombas por el momento). Otra actualizacion seria darle un coctel
+            de nutrientes y mezcle todos los adecuados para una solucion rica en nutrientes adecuados (porcentaje)
+        }
+    ],
+    temperature:{
+        sensor de temperatura para el agua (la sonda)
+        quiza se pueda poner algo como:
+        F: "grados Fah",
+        C: "grados celcius"
+        k: "grados kelvin" (nadie usa kelvin xd)
+    }
+}
+TEST
